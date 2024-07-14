@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 
 export default function UserPage() {
-  const url = "http://localhost:3000/users";
+  const url = "http://localhost:8000/users";
 
   let navigate = useNavigate();
 
