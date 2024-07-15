@@ -8,7 +8,10 @@ function MainLayout() {
     <div className="App">
       <NavBar />
       <Routes>
-        <Route exact path="/account/:index" element={<UserPage />} />
+        <Route 
+          exact 
+          path="/account/:index" 
+          element={<UserPage />} />
         <Route
           exact
           path="/transactions/:index"

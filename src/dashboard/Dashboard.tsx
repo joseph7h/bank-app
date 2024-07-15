@@ -9,6 +9,7 @@ import List from '@mui/material/List';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
+import Button from '@mui/material/Button'
 import Badge from '@mui/material/Badge';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
@@ -123,8 +124,10 @@ export default function Dashboard() {
               noWrap
               sx={{ flexGrow: 1 }}
             >
-              Dashboard
+              Deutsche Bank
             </Typography>
+            <Button size='small' color="inherit" variant="outlined">Ask Me</Button>
+            <Button size='small' color="inherit" variant="outlined">Sign Off</Button>
             <IconButton color="inherit">
               <Badge badgeContent={4} color="secondary">
                 <NotificationsIcon />
@@ -168,7 +171,7 @@ export default function Dashboard() {
           <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
             <Grid container spacing={3}>
               {/* Chart */}
-              <Grid item xs={12} md={8} lg={9}>
+              <Grid item xs={12} md={6} lg={6}>
                 <Paper
                   sx={{
                     p: 2,
@@ -181,7 +184,7 @@ export default function Dashboard() {
                 </Paper>
               </Grid>
               {/* Recent Deposits */}
-              <Grid item xs={12} md={4} lg={3}>
+              <Grid item xs={12} md={6} lg={6}>
                 <Paper
                   sx={{
                     p: 2,
