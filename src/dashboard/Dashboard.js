@@ -17,6 +17,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import { mainListItems, secondaryListItems } from './listItems';
+import { useNavigate } from "react-router-dom";
 
 function Copyright(props) {
   return (
@@ -86,6 +87,8 @@ export default function Dashboard(props) {
     setOpen(!open);
   };
 
+  let navigate = useNavigate();
+
   return (
     <ThemeProvider theme={defaultTheme}>
       <Box sx={{ display: 'flex' }}>
@@ -118,7 +121,7 @@ export default function Dashboard(props) {
               Deutsche Bank
             </Typography>
             <Button size='small' color="inherit" variant="outlined">Ask Me</Button>
-            <Button size='small' color="inherit" variant="outlined">Sign Off</Button>
+            <Button size='small' color="inherit" variant="outlined" onClick={() => navigate("/")}>Sign Out</Button>
             <IconButton color="inherit">
               <Badge badgeContent={4} color="secondary">
                 <NotificationsIcon />

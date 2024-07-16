@@ -12,16 +12,12 @@ import IconButton from '@mui/material/IconButton';
 import Button from '@mui/material/Button'
 import Badge from '@mui/material/Badge';
 import Container from '@mui/material/Container';
-import Grid from '@mui/material/Grid';
-import Paper from '@mui/material/Paper';
 import Link from '@mui/material/Link';
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import { mainListItems, secondaryListItems } from './listItems';
-import Chart from './Chart';
-import Deposits from './Deposits';
-import Payments from './Payments';
+import { useNavigate } from "react-router-dom";
 
 function Copyright(props: any) {
   return (
@@ -95,6 +91,8 @@ export default function Dashboard(props: any) {
     setOpen(!open);
   };
 
+  let navigate = useNavigate();
+
   return (
     <ThemeProvider theme={defaultTheme}>
       <Box sx={{ display: 'flex' }}>
@@ -127,7 +125,7 @@ export default function Dashboard(props: any) {
               Deutsche Bank
             </Typography>
             <Button size='small' color="inherit" variant="outlined">Ask Me</Button>
-            <Button size='small' color="inherit" variant="outlined">Sign Off</Button>
+            <Button size='small' color="inherit" variant="outlined" onClick={() => navigate("/")}>Sign Out</Button>
             <IconButton color="inherit">
               <Badge badgeContent={4} color="secondary">
                 <NotificationsIcon />
@@ -169,8 +167,7 @@ export default function Dashboard(props: any) {
         >
           <Toolbar />
           <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
-
-          {props.element}
+            {props.element}
             <Copyright sx={{ pt: 4 }} />
           </Container>
         </Box>
