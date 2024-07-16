@@ -16,7 +16,7 @@ export const mainListItems = (
       <ListItemIcon>
         <DashboardIcon />
       </ListItemIcon>
-      <ListItemText primary="Home" />
+      <Link to="/dash" style={{ textDecoration: 'none', color: 'black' }}>Dashboard</Link>
     </ListItemButton>
     <ListItemButton>
       <ListItemIcon>

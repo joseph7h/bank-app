@@ -36,7 +36,7 @@ export default function LoginPage() {
         });
         console.log(userData);
         if (userData) {
-          navigate(`/account/${userIndex}`);
+          navigate(`/users/${userIndex}`);
         } else {
           setInvalid("d-block");
         }
@@ -58,7 +58,7 @@ export default function LoginPage() {
         className="fs-1 text-light text-center mt-5"
         style={{ fontFamily: "Tilt Prism", textShadow: "3px 2px 3px blue" }}
       >
-        Welcome to Zealous Bank
+        Welcome to Deutsche Bank
       </p>
       <div className="row">
         <div className="col-sm-9 col-md-7 col-lg-6 col-xl-4 m-auto px-5">
