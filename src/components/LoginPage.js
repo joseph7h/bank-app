@@ -36,7 +36,7 @@ export default function LoginPage() {
         });
         console.log(userData);
         if (userData) {
-          navigate(`/users/${userIndex}`);
+          navigate(`/dash`);
         } else {
           setInvalid("d-block");
         }

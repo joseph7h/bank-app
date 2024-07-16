@@ -16,8 +16,14 @@ import Link from '@mui/material/Link';
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import NotificationsIcon from '@mui/icons-material/Notifications';
-import { mainListItems, secondaryListItems } from './listItems';
+import { mainListItems } from './listItems';
 import { useNavigate } from "react-router-dom";
+import { Fab } from '@mui/material';
+import AddIcon from '@mui/icons-material/Add';
+import EditIcon from '@mui/icons-material/Edit';
+import NavigationIcon from '@mui/icons-material/Navigation';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import BasicPopover from '../popover/BasicPopover';
 
 function Copyright(props: any) {
   return (
@@ -124,7 +130,8 @@ export default function Dashboard(props: any) {
             >
               Deutsche Bank
             </Typography>
-            <Button size='small' color="inherit" variant="outlined">Ask Me</Button>
+            <BasicPopover/>
+            <Button size='small' color="inherit" variant="outlined" onClick={() => navigate("/users/0")}>Profile</Button>
             <Button size='small' color="inherit" variant="outlined" onClick={() => navigate("/")}>Sign Out</Button>
             <IconButton color="inherit">
               <Badge badgeContent={4} color="secondary">
@@ -150,7 +157,6 @@ export default function Dashboard(props: any) {
           <List component="nav">
             {mainListItems}
             <Divider sx={{ my: 1 }} />
-            {secondaryListItems}
           </List>
         </Drawer>
         <Box
@@ -168,6 +174,19 @@ export default function Dashboard(props: any) {
           <Toolbar />
           <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
             {props.element}
+            <Fab color="primary" aria-label="add">
+              <AddIcon />
+            </Fab>
+            <Fab color="secondary" aria-label="edit">
+              <EditIcon />
+            </Fab>
+            <Fab variant="extended">
+              <NavigationIcon sx={{ mr: 1 }} />
+              Navigate
+            </Fab>
+            <Fab disabled aria-label="like">
+              <FavoriteIcon />
+            </Fab>
             <Copyright sx={{ pt: 4 }} />
           </Container>
         </Box>

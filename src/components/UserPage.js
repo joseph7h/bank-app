@@ -65,18 +65,6 @@ export default function UserPage() {
 
   return (
     <div className="container m-auto row mt-5 d-flex align-items-center col-lg-5">
-      <div className="col-8">
-        <h1 className="text-start">My Account</h1>
-      </div>
-      <div className="col-3">
-        <button
-          className="btn btn-outline-primary float-end"
-          onClick={handleClick}
-        >
-          Edit
-        </button>
-      </div>
-
       <div id="about-areas" className="row col-auto">
         <form className="row g-3">
           <div className="col-12 mt-lg-3">
@@ -196,23 +184,6 @@ export default function UserPage() {
                 Savings
               </option>
             </select>
-          </div>
-
-          <div className="col-12 my-4 mt-lg-5 d-flex justify-content-between">
-            <Link
-              type="button"
-              className="btn btn-outline-info"
-              to={`/transactions/${index}`}
-            >
-              View Transactions
-            </Link>
-            <button
-              type="button"
-              className="btn btn-outline-danger"
-              onClick={handleDelete}
-            >
-              Delete account
-            </button>
           </div>
         </form>
       </div>
