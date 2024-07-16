@@ -2,15 +2,15 @@
   "users": [
     {
       "customerId": "1234",
-      "customerName": "Raju",
+      "customerName": "Rajdeep",
       "customerPin": 9899,
       "customerAccountType": "savings",
       "customerAccountNo": 8765678,
       "customerAccountBalance": "12,450",
       "customerAadhar": 12345678,
       "customerPan": 12345678,
-      "customerContact": 123456789,
-      "customerEmail": "raju@email.com",
+      "customerContact": 6503336666,
+      "customerEmail": "rajdeep@email.com",
       "customerTransactions": [
         {
           "transactionId": 1466,
@@ -46,15 +46,15 @@
     },
     {
       "customerId": 5678,
-      "customerName": "Kumar",
+      "customerName": "Nitin",
       "customerPin": 8787,
       "customerAccountType": "current",
       "customerAccountNo": 345433245,
       "customerAccountBalance": "26,765",
       "customerAadhar": 1222223444,
       "customerPan": 111111111122,
-      "customerContact": 123456789,
-      "customerEmail": "kumar@email.com",
+      "customerContact": 4027775555,
+      "customerEmail": "nitin@gmail.com",
       "customerTransactions": [
         {
           "transactionId": 1655,
@@ -84,15 +84,15 @@
     },
     {
       "customerId": "91011",
-      "customerName": "Ram",
+      "customerName": "Mike",
       "customerPin": 9797,
       "customerAccountType": "savings",
       "customerAccountNo": 87656564,
       "customerAccountBalance": "12,240",
       "customerAadhar": 12345678,
       "customerPan": 12345678,
-      "customerContact": 123456789,
-      "customerEmail": "ram@email.com",
+      "customerContact": 9842224444,
+      "customerEmail": "mike@gmail.com",
       "customerTransactions": [
         {
           "transactionId": 1543,
@@ -116,15 +116,15 @@
     },
     {
       "customerId": "121314",
-      "customerName": "Gopal",
+      "customerName": "Pankaj",
       "customerPin": 5656,
       "customerAccountType": "current",
       "customerAccountNo": 87656564,
       "customerAccountBalance": "56,240",
       "customerAadhar": 12345678,
       "customerPan": 12345678,
-      "customerContact": 123456789,
-      "customerEmail": "gopal@email.com",
+      "customerContact": 9195559999,
+      "customerEmail": "pankaj@gmail.com",
       "customerTransactions": [
         {
           "transactionId": 1346,

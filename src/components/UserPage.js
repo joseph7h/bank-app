@@ -149,7 +149,7 @@ export default function UserPage() {
               </label>
               <div className="input-group">
                 <span className="input-group-text" id="basic-addon1">
-                  +91
+                  +1
                 </span>
                 <input
                   type="number"
