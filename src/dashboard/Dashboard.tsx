@@ -19,10 +19,9 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import { mainListItems } from './listItems';
 import { useNavigate } from "react-router-dom";
 import { Fab } from '@mui/material';
-import AddIcon from '@mui/icons-material/Add';
-import EditIcon from '@mui/icons-material/Edit';
-import NavigationIcon from '@mui/icons-material/Navigation';
-import FavoriteIcon from '@mui/icons-material/Favorite';
+import ChatIcon from '@mui/icons-material/Chat';
+import HelpIcon from '@mui/icons-material/Help';
+import Draggable from 'react-draggable';
 import BasicPopover from '../popover/BasicPopover';
 
 function Copyright(props: any) {
@@ -174,20 +173,22 @@ export default function Dashboard(props: any) {
           <Toolbar />
           <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
             {props.element}
-            <Fab color="primary" aria-label="add">
-              <AddIcon />
-            </Fab>
-            <Fab color="secondary" aria-label="edit">
-              <EditIcon />
-            </Fab>
-            <Fab variant="extended">
-              <NavigationIcon sx={{ mr: 1 }} />
-              Navigate
-            </Fab>
-            <Fab disabled aria-label="like">
-              <FavoriteIcon />
-            </Fab>
-            <Copyright sx={{ pt: 4 }} />
+            <Draggable>
+              <div>
+                <Fab
+                  color="primary" 
+                  aria-label="askme"
+                  onClick={() => window.open("users/0", "test")}
+                  >
+                  <ChatIcon />
+                </Fab>
+                <Fab
+                  color="secondary" 
+                  aria-label="help">
+                  <HelpIcon />
+                </Fab>
+              </div>
+            </Draggable>
           </Container>
         </Box>
       </Box>
