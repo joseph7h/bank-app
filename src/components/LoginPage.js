@@ -1,6 +1,9 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Switch from '@mui/material/Switch';
+
+const label = { inputProps: { 'aria-label': 'Face Id' } };
 
 export default function LoginPage() {
   const url = "http://localhost:8000/users";
@@ -58,7 +61,7 @@ export default function LoginPage() {
         className="fs-1 text-light text-center mt-5"
         style={{ fontFamily: "Tilt Prism", textShadow: "3px 2px 3px blue" }}
       >
-        Welcome to Deutsche Bank
+        My Service Dog
       </p>
       <div className="row">
         <div className="col-sm-9 col-md-7 col-lg-6 col-xl-4 m-auto px-5">
@@ -78,7 +81,7 @@ export default function LoginPage() {
                     onChange={handleChange}
                     name="userId"
                   />
-                  <label htmlFor="floatingInput">User ID</label>
+                  <label htmlFor="floatingInput">User ID (User/Care Taker)</label>
                 </div>
                 <div className="form-floating mb-3">
                   <input
@@ -110,6 +113,16 @@ export default function LoginPage() {
                     Remember password
                   </label>
                 </div>
+                <div>
+                  <Switch {...label}  >Face Id</Switch> 
+                
+                <label
+                    className="form-check-label"
+                    htmlFor="rememberPasswordCheck"
+                  >
+                    Face Id Sign In
+                  </label>
+                  </div>
                 <div className="d-grid mt-4">
                   <button
                     className="btn btn-primary text-uppercase fw-semibold"
@@ -119,6 +132,7 @@ export default function LoginPage() {
                     Sign in
                   </button>
                 </div>
+                
               </form>
             </div>
           </div>

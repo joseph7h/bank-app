@@ -123,7 +123,7 @@ export default function Dashboard(props) {
               noWrap
               sx={{ flexGrow: 1 }}
             >
-              Deutsche Bank
+              Service Dog
             </Typography>
             <BasicPopover />
             <Button size='small' color="inherit" variant="outlined" onClick={() => navigate("/users/0")}>Profile</Button>

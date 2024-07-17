@@ -5,6 +5,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import CardMedia from '@mui/material/CardMedia';
 
 const bull = (
     <Box
@@ -27,6 +28,12 @@ export default function ProviderCard() {
                     rkarmakar@gmail.com
                 </Typography>
             </CardContent>
+            <CardMedia
+            component="img"
+            height="140"
+            image="https://d2jv02qf7xgjwx.cloudfront.net/accounts/183381/profiles/180241/Screen_Shot_2022-08-10_at_10.39.01_PM.png"
+            alt="Placard"
+            />
             <CardActions>
                 <Button size="small">Reach Out</Button>
             </CardActions>

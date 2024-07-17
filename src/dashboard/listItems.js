@@ -13,19 +13,53 @@ export const mainListItems = (
       <ListItemIcon>
         <DashboardIcon />
       </ListItemIcon>
-      <Link to="/dash" style={{ textDecoration: 'none', color: 'black' }}>Dashboard</Link>
+      <Link to="/dash" style={{ textDecoration: 'none', color: 'black' }}>Financials</Link>
     </ListItemButton>
-    <ListItemButton>
+    {/* <ListItemButton>
       <ListItemIcon>
         <ShoppingCartIcon />
       </ListItemIcon>
       <Link to="/transactions/0" style={{ textDecoration: 'none', color: 'black' }}>Transactions</Link>
+    </ListItemButton> */}
+    <ListItemButton>
+      <ListItemIcon>
+        <PeopleIcon />
+      </ListItemIcon>
+      <ListItemText primary="Family Placard" />
+    </ListItemButton>
+
+    <ListItemButton>
+      <ListItemIcon>
+        <PeopleIcon />
+      </ListItemIcon>
+      <ListItemText primary="Health Care" />
+    </ListItemButton>
+
+    <ListItemButton>
+      <ListItemIcon>
+        <PeopleIcon />
+      </ListItemIcon>
+      <ListItemText primary="Navigate to Patient Location" />
+    </ListItemButton>
+
+    <ListItemButton>
+      <ListItemIcon>
+        <PeopleIcon />
+      </ListItemIcon>
+      <ListItemText primary="Frequently asked Questions for caretaker review?" />
+    </ListItemButton>
+
+    <ListItemButton>
+      <ListItemIcon>
+        <PeopleIcon />
+      </ListItemIcon>
+      <ListItemText primary="Face Matching/Who is this person?" />
     </ListItemButton>
     <ListItemButton>
       <ListItemIcon>
         <PeopleIcon />
       </ListItemIcon>
-      <ListItemText primary="Caregivers" />
+      <ListItemText primary="Initiate a Service Request?" />
     </ListItemButton>
   </React.Fragment>
 );
