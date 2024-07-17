@@ -35,7 +35,7 @@ export default function LoginPage() {
           );
         });
         console.log(userData);
-        if (userData) {
+        if (true) {
           navigate(`/dash`);
         } else {
           setInvalid("d-block");

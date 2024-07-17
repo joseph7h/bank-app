@@ -7,26 +7,36 @@ const AskMe = () => {
   const [convo, setConvo] = useState([]);
   const [recentQuestions, setRecentQuestions] = useState([]);
   const [userInput, setUserInput] = useState('');
-  //test
+
   const KeyQuestion = ({question}) => {
     return (
       <>
         <button 
         style={{width: '100%'}} 
-        onClick={() => setConvo(convo => 
-        [...convo,
-        <div className="mine messages">
-          <div className="message">
-            {question}
-          </div>
-        </div>])}
-        class="button-29"
+        onClick={() => onUserClickBookmarkQ(question)}
+        className="button-29"
         >
           {question}
         </button>
       </>
     );
   };
+
+  const fetchResponse = () => {
+    fetch('https://jsonplaceholder.typicode.com/todos/1')
+      .then(response => response.json())
+      .then(json => {
+        setConvo(convo =>
+          [...convo,
+            <div className="yours messages">
+              <div className="message">
+                {json.title}
+              </div>
+            </div>
+          ]
+          )
+      })
+  }
 
   const onUserSubmit = () => {
     setConvo(convo => 
@@ -42,13 +52,8 @@ const AskMe = () => {
           ...recentQuestions,
           <button 
           style={{width: '100%'}} 
-          onClick={() => setConvo(convo => [...convo, 
-            <div className="mine messages">
-              <div className="message">
-                {userInput}
-              </div>
-            </div>])}
-          class="button-29"
+          onClick={() => onUserClickBookmarkQ(userInput)}
+          className="button-29"
           >
             {userInput}
           </button>
@@ -56,6 +61,7 @@ const AskMe = () => {
       )
     }
     setUserInput('');
+    fetchResponse();
   }
 
   const keyQuestions = [];
@@ -63,6 +69,17 @@ const AskMe = () => {
   for (let q of mockData) {
     keyQuestions.push(<KeyQuestion question={q}/>);
   }
+
+  const onUserClickBookmarkQ = (question) => {
+    setConvo(convo => 
+      [...convo,
+      <div className="mine messages">
+        <div className="message">
+          {question}
+        </div>
+      </div>]);
+      fetchResponse();
+  };
 
   return (
     <>
@@ -83,7 +100,7 @@ const AskMe = () => {
         <button 
         onClick={() => onUserSubmit()}
         style={{width: '100%'}}
-        class="button-29"
+        className="button-29"
         >
           Send Message
         </button>
