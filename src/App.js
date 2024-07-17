@@ -13,7 +13,10 @@ function App() {
       <Router>
         <Routes>
           <Route index path="/" element={<LoginPage />} />
-          <Route index path="/askme" element={<AskMe />} />
+          <Route
+            index
+            path="/askme"
+            element={<Dashboard element={<AskMe />} />} />
           <Route
             index
             path="/users/:index"
