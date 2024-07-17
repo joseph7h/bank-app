@@ -6,6 +6,7 @@ import Dashboard from "./dashboard/Dashboard";
 import HomeContent from "./dashboard/HomeContent";
 import UserPage from "./components/UserPage";
 import AskMe from "./askme/AskMe";
+import Transactions from "./dashboard/Transactions";
 
 function App() {
   return (
@@ -21,6 +22,10 @@ function App() {
             index
             path="/users/:index"
             element={<Dashboard element={<UserPage />} />} />
+          <Route
+            exact
+            path="/transactions/:index"
+            element={<Dashboard element={<Transactions />} />} />
           <Route
             index
             path="/dash"

@@ -2,7 +2,7 @@ import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import Chart from './Chart';
 import Deposits from './Deposits';
-import Payments from './Payments';
+import Transactions from './Transactions';
 
 export default function HomeContent() {
     return (
@@ -36,7 +36,7 @@ export default function HomeContent() {
         {/* Recent Orders */}
         <Grid item xs={12}>
           <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column' }}>
-            <Payments />
+            <Transactions />
           </Paper>
         </Grid>
         </Grid>
