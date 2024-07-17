@@ -1,6 +1,6 @@
 import { useState } from "react";
-import mockData from "../mockData";
-import '../styles.css'
+import mockData from "./mockData";
+import './styles.css'
 import ScrollToBottom from "react-scroll-to-bottom";
 
 const AskMe = () => {

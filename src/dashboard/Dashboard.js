@@ -174,7 +174,7 @@ export default function Dashboard(props) {
                 <Fab
                   color="primary" 
                   aria-label="askme"
-                  onClick={() => window.open("users/0", "test")}
+                  onClick={() => window.open("/askme", "test")}
                   >
                   <ChatIcon />
                 </Fab>

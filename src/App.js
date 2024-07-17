@@ -5,6 +5,7 @@ import MainLayout from "./MainLayout";
 import Dashboard from "./dashboard/Dashboard";
 import HomeContent from "./dashboard/HomeContent";
 import UserPage from "./components/UserPage";
+import AskMe from "./askme/AskMe";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Router>
         <Routes>
           <Route index path="/" element={<LoginPage />} />
+          <Route index path="/askme" element={<AskMe />} />
           <Route
             index
             path="/users/:index"
