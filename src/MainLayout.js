@@ -1,4 +1,3 @@
-import NavBar from "./components/Navbar";
 import ViewTransactions from "./components/ViewTransactions";
 import UserPage from "./components/UserPage";
 import { BrowserRouter as Router, Rou, Route, Routes } from "react-router-dom";
@@ -6,7 +5,6 @@ import { BrowserRouter as Router, Rou, Route, Routes } from "react-router-dom";
 function MainLayout() {
   return (
     <div className="App">
-      <NavBar />
       <Routes>
         <Route 
           exact 
