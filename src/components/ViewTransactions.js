@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
 export default function ViewTransactions() {
-  const url = "http://localhost:3000/users";
+  const url = "http://localhost:8000/users";
 
   let navigate = useNavigate();
 
@@ -74,7 +74,7 @@ const TableDatas = ({ data, filter }) => {
       <td>{data.transactionType}</td>
       <td
         style={
-          data.transactionType == "credit"
+          data.transactionType === "credit"
             ? { backgroundColor: "#ccffcc" }
             : { backgroundColor: "#ffaaaa" }
         }
@@ -82,14 +82,14 @@ const TableDatas = ({ data, filter }) => {
         {data.transactionAmount}
       </td>
     </tr>
-  ) : filter == "none" ? (
+  ) : filter === "none" ? (
     <tr>
       <th scope="row">{data.transactionId}</th>
       <td>{data.transactionDate}</td>
       <td>{data.transactionType}</td>
       <td
         style={
-          data.transactionType == "credit"
+          data.transactionType === "credit"
             ? { backgroundColor: "#ccffcc" }
             : { backgroundColor: "#ffaaaa" }
         }

@@ -30,8 +30,8 @@ export default function LoginPage() {
         const userData = allDatas.find((user, index) => {
           userIndex = index;
           return (
-            user.customerId == login.userId &&
-            user.customerPin == login.password
+            user.customerId === login.userId &&
+            user.customerPin === login.password
           );
         });
         console.log(userData);

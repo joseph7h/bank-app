@@ -37,7 +37,7 @@ function Copyright(props) {
   );
 }
 
-const drawerWidth = 240;
+const drawerWidth = 430;
 
 const AppBar = styled(MuiAppBar, {
   shouldForwardProp: (prop) => prop !== 'open',
@@ -74,7 +74,7 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
           easing: theme.transitions.easing.sharp,
           duration: theme.transitions.duration.leavingScreen,
         }),
-        width: theme.spacing(7),
+        width: 0,
         [theme.breakpoints.up('sm')]: {
           width: theme.spacing(9),
         },
@@ -146,6 +146,7 @@ export default function Dashboard(props) {
           >
             <IconButton onClick={toggleDrawer}>
               <ChevronLeftIcon />
+              <button style={{background: 'transparent', border: 'none', color: 'darkgray'}}>Return to Menu</button>
             </IconButton>
           </Toolbar>
           <Divider />
