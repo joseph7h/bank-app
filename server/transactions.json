@@ -1,0 +1,124 @@
+{
+    "transactions": [
+      {
+        "transId": "1001",
+        "transDatetime": "3/15/2024 17:00",
+        "transDescription": "DIRECT DEPOSIT - ACME CORP PAYROLL",
+        "transAmount": "$2,500.00",
+        "remainingBalance": "$50,000.00",
+        "transType": "Credit"
+      },
+      {
+        "transId": "1002",
+        "transDatetime": "3/17/2024 10:00",
+        "transDescription": "DEBIT CARD PURCHASE - GROCERY STORE XYZ",
+        "transAmount": "$85.73",
+        "remainingBalance": "$49,914.27",
+        "transType": "Debit"
+      },
+      {
+        "transId": "1003",
+        "transDatetime": "3/17/2024 10:01",
+        "transDescription": "DEBIT CARD PURCHASE - GROCERY STORE XYZ",
+        "transAmount": "$85.73",
+        "remainingBalance": "$49,828.54",
+        "transType": "Debit"
+      },
+      {
+        "transId": "1004",
+        "transDatetime": "3/18/2024 11:25",
+        "transDescription": "DEBIT CARD PURCHASE - GROCERY STORE XYZ",
+        "transAmount": "$85.73",
+        "remainingBalance": "$49,724.81",
+        "transType": "Debit"
+      },
+      {
+        "transId": "1005",
+        "transDatetime": "3/18/2024 13:04",
+        "transDescription": "ATM WITHDRAWAL - 123 MAIN ST",
+        "transAmount": "$100.00",
+        "remainingBalance": "$49,624.81",
+        "transType": "Debit"
+      },
+      {
+        "transId": "1006",
+        "transDatetime": "3/20/2024 3:00",
+        "transDescription": "ONLINE TRANSFER TO SAVINGS ACCOUNT",
+        "transAmount": "$500.00",
+        "remainingBalance": "$49,124.81",
+        "transType": "Debit"
+      },
+      {
+        "transId": "1007",
+        "transDatetime": "3/22/2024 4:00",
+        "transDescription": "CHECK #1001",
+        "transAmount": "$250.00",
+        "remainingBalance": "$48,874.81",
+        "transType": "Debit"
+      },
+      {
+        "transId": "1008",
+        "transDatetime": "3/25/2024 14:30",
+        "transDescription": "AUTOPAY - ELECTRIC COMPANY",
+        "transAmount": "$75.50",
+        "remainingBalance": "$48,799.31",
+        "transType": "Debit"
+      },
+      {
+        "transId": "1009",
+        "transDatetime": "3/27/2024 8:00",
+        "transDescription": "CREDIT CARD PAYMENT",
+        "transAmount": "$300.00",
+        "remainingBalance": "$48,499.31",
+        "transType": "Debit"
+      },
+      {
+        "transId": "1010",
+        "transDatetime": "3/29/2024 13:00",
+        "transDescription": "MOBILE DEPOSIT",
+        "transAmount": "$150.00",
+        "remainingBalance": "$48,649.31",
+        "transType": "Debit"
+      },
+      {
+        "transId": "1011",
+        "transDatetime": "3/31/2024 23:46",
+        "transDescription": "MONTHLY MAINTENANCE FEE",
+        "transAmount": "$12.00",
+        "remainingBalance": "$48,637.31",
+        "transType": "Debit"
+      },
+      {
+        "transId": "1012",
+        "transDatetime": "4/1/2024 17:00",
+        "transDescription": "INTEREST PAID",
+        "transAmount": "$0.15",
+        "remainingBalance": "$48,637.46",
+        "transType": "Debit"
+      },
+      {
+        "transId": "1013",
+        "transDatetime": "4/5/2024 17:00",
+        "transDescription": "UTILITY BILL",
+        "transAmount": "$137.46",
+        "remainingBalance": "$48,500.00",
+        "transType": "Debit"
+      },
+      {
+        "transId": "1014",
+        "transDatetime": "4/11/2024 17:00",
+        "transDescription": "DIRECT DEPOSIT - ACME CORP PAYROLL",
+        "transAmount": "$1,500.00",
+        "remainingBalance": "$50,000.00",
+        "transType": "Debit"
+      },
+      {
+        "transId": "1015",
+        "transDatetime": "7/12/2024 17:00",
+        "transDescription": "CHARITY TO WILDLIFE",
+        "transAmount": "$20,000.00",
+        "remainingBalance": "$30,000.00",
+        "transType": "Debit"
+      }
+    ]
+}
